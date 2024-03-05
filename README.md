@@ -30,6 +30,17 @@ Cron expressions are used to schedule tasks in Unix-like operating systems. They
 
     The program will output a table with each field expanded to show the times at which it will run, along with the specified command.
 
+    Example output for the cron expression "*/15 0 1,15 * 1-5 /usr/bin/find":
+
+    ```
+    minute:         0 15 30 45
+    hour:           0
+    day of month:   1 15
+    month:          1 2 3 4 5 6 7 8 9 10 11 12
+    day of week:    1 2 3 4 5
+    command:    /usr/bin/find
+    ```
+
 ## Cron Expression Format
 
 The cron expression should follow the standard format with five time fields (minute, hour, day of month, month, and day of week), plus a command. Each field should be separated by a space.
