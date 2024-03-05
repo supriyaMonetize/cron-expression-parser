@@ -38,7 +38,14 @@ For example:
 
 - `*/15 0 1,15 * 1-5 /usr/bin/find`
 
+## Unit Tests
+
+The project includes unit tests for the `CronExpressionParser` class. These tests ensure that the parser functions correctly under various scenarios.
+
+To run the unit tests, you can use a testing framework such as JUnit. The test class is named `CronExpressionParserTest`.
+
 ## Notes
 
 - If the provided cron expression is invalid or in an incorrect format, the program will display an error message.
-- The program supports wildcard (\*), ranges (-), and steps (/) in each 
+- The program supports wildcard (\*), ranges (-), and steps (/) in each field of the cron expression.
+
